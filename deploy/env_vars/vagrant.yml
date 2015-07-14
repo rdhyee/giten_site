@@ -2,7 +2,7 @@
 
 # Git settings.
 setup_git_repo: yes
-git_branch: fa49b989525736ac5b8b01d2608ae746f24e329d
+git_branch: 3238c9c32d06a0ad3aefb3fddeda474e9fa44f36
 
 
 # Database settings.

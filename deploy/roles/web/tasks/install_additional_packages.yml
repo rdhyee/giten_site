@@ -5,3 +5,5 @@
   with_items:
     #- ffmpeg
     - libffi-dev
+    - build-essential 
+    - libssl-dev 
