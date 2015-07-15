@@ -36,3 +36,4 @@ django_environment:
   EMAIL_HOST_USER: "{{ email_host_user|default(omit) }}"
   EMAIL_HOST_PASSWORD: "{{ email_host_password|default(omit) }}"
   BROKER_URL: "{{ broker_url|default(omit) }}"
+  DJANGO_LOG: "{{django_log}}"

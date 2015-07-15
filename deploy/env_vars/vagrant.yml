@@ -2,7 +2,7 @@
 
 # Git settings.
 setup_git_repo: yes
-git_branch: 3238c9c32d06a0ad3aefb3fddeda474e9fa44f36
+git_branch: master
 
 
 # Database settings.
@@ -54,3 +54,5 @@ broker_url: "amqp://{{ rabbitmq_application_user }}:{{ rabbitmq_application_pass
 
 run_django_db_migrations: yes
 run_django_collectstatic: yes
+
+django_log: "./django.log"
