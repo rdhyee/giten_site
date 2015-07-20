@@ -4,11 +4,18 @@
 setup_git_repo: yes
 git_branch: master
 
+# django_environment :  set to DEVELOPMENT for a dev environment
+environment: production
 
 # Database settings.
+# comment out use_postgres to use sqlite
+use_postgres: true
+
 db_user: "{{ application_name }}"
 db_name: "{{ application_name }}"
 db_password: password
+db_host: 127.0.0.1
+db_port: 5432
 
 
 # Gunicorn settings. For the number of workers, a good rule to follow is

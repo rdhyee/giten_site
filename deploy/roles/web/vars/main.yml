@@ -37,3 +37,14 @@ django_environment:
   EMAIL_HOST_PASSWORD: "{{ email_host_password|default(omit) }}"
   BROKER_URL: "{{ broker_url|default(omit) }}"
   DJANGO_LOG: "{{django_log}}"
+  
+  ENVIRONMENT: "{{environment}}"
+  
+  # unset following if sqlite desired
+  RDS_HOSTNAME: "{{use_postgres|default(omit}}"
+  
+  RDS_DB_NAME: "{{db_name}}"
+  RDS_USERNAME: "{{db_user}}"
+  RDS_PASSWORD: "{{db_password}}"
+  RDS_HOSTNAME: "{{db_host}}"
+  RDS_PORT: "{{db_port}}"
